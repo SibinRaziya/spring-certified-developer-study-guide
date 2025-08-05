@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.3</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>io.davidarchanjo</groupId>
+	<artifactId>spring-certified-developer-study-guide</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+	<description>Study Guide for the Spring Certified Developer 2021</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>15</java.version>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+	
+	<modules>
+		<module>spring-actuator</module>
+        <module>spring-aop</module>
+		<module>spring-bean</module>
+		<module>spring-bean-callback-order</module>
+		<module>spring-bean-factory-post-processor</module>
+		<module>spring-bean-lifecycle-callback-order</module>
+		<module>spring-bean-post-processor</module>
+		<module>spring-conditional</module>
+		<module>spring-crud</module>
+		<module>spring-data-jpa</module>
+		<module>spring-datasource</module>
+		<module>spring-jdbc</module>
+		<module>spring-mvc</module>
+		<module>spring-resttemplate</module>
+		<module>spring-security</module>
+		<module>spring-spel</module>
+		<module>spring-startup</module>
+		<module>spring-testing</module>
+		<module>spring-transaction</module>
+		<module>spring-web</module>
+    </modules>
+
+</project>
